@@ -294,7 +294,12 @@ int get_option(const char **options, int options_count, const char *option_name)
  */
 Difficulty get_difficulty(Difficulty_type difficulty_type)
 {
-	Difficulty difficulty = {};
+	Difficulty difficulty = {
+		.grid_size = 0,
+		.words_count = 0,
+		.time_limit = 0.0,
+	};
+
 	switch (difficulty_type)
 	{
 		case DIFFICULTY_EASY:
