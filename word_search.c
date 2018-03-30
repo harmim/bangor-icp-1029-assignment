@@ -667,7 +667,15 @@ bool generate_words(char **grid, char **grid_mask, Generated_word *generated_wor
 		}
 
 		// insert generated word
-		if (!inserted_word(words[category][word_index], grid, grid_mask, &generated_words[i], direction, order, difficulty))
+		if (!inserted_word(
+			words[category][word_index],
+			grid,
+			grid_mask,
+			&generated_words[i],
+			direction,
+			order,
+			difficulty
+		))
 		{
 			return false;
 		}
