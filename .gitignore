@@ -1,5 +1,6 @@
-.*
-!.gitignore
+### CLion
+/.idea/
 
-# CMake
-cmake-*/
+
+### CMake
+/cmake-build-*/
